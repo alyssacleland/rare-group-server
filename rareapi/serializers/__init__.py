@@ -1,1 +1,1 @@
-from .tag import TagSerialzier
+from .tag import TagSerializer
