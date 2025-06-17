@@ -19,15 +19,19 @@ from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
 
-from rareapi.views import TagView, UserView
+from rareapi.views import TagView, UserView, PostView, PostTagView
 from django.urls import path
 # TODO: import register user and check user
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'tags', TagView, basename='tag')
 router.register(r'users', UserView, 'user')
+router.register(r'posts', PostView, basename='post')
+router.register(r'posttags', PostTagView, basename='posttag')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls))
 ]
+
+
