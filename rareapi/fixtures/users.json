@@ -1,0 +1,18 @@
+[
+  {
+      "model": "rareapi.user",
+      "pk": 1,
+      "fields": {
+          "first_name": "Frank",
+          "last_name": "Ocean",
+          "bio": "A potato flew around my room.",
+          "profile_image_url": "https://i5.walmartimages.com/seo/Album-Cover-Music-Poster-Channel-Blonde-Cool-Wall-Decor-Art-Print-posters-for-room-aesthetic-Poster-Frameless-Gift-16-x-24-inch-40cm-x-60cm_95dd642a-3b7b-4f23-864a-8c6034336e69.2adf876c635d6ff64696a8ecbaaebd36.jpeg",
+          "email": "justtobefrank@gmail.com",
+          "created_on": "2012-07-10",
+          "active": true,
+          "is_staff": true,
+          "uid": 1
+
+      }
+  }
+]

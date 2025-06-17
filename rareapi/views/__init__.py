@@ -1,1 +1,4 @@
-from tag import TagView
+
+from .tag import TagView
+from .user import UserView
+
