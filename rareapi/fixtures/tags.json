@@ -1,0 +1,23 @@
+[
+  {
+    "model": "rareapi.tag",
+    "pk": 1,
+    "fields": {
+      "label": "#Bonnaroo"
+    }
+  },
+    {
+    "model": "rareapi.tag",
+    "pk": 2,
+    "fields": {
+      "label": "#Dogs"
+    }
+  },
+    {
+    "model": "rareapi.tag",
+    "pk": 3,
+    "fields": {
+      "label": "#Music"
+    }
+  }
+]

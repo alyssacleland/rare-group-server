@@ -18,9 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
-from rareapi.views import UserView
+
+from rareapi.views import TagView, UserView
+from django.urls import path
+# TODO: import register user and check user
 
 router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'tags', TagView, 'tag')
 router.register(r'users', UserView, 'user')
 
 urlpatterns = [
