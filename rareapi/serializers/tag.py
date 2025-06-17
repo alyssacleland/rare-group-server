@@ -2,7 +2,7 @@ from rest_framework import serializers, status
 from rareapi.models import Tag
 
 
-class TagSerialzier(serializers.ModelSerializer):
+class TagSerializer(serializers.ModelSerializer):
     """JSON serializer for tags"""
 
     class Meta:

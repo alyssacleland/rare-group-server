@@ -24,7 +24,7 @@ from django.urls import path
 # TODO: import register user and check user
 
 router = routers.DefaultRouter(trailing_slash=False)
-router.register(r'tags', TagView, 'tag')
+router.register(r'tags', TagView, basename='tag')
 router.register(r'users', UserView, 'user')
 
 urlpatterns = [
