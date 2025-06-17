@@ -33,4 +33,26 @@ class Migration(migrations.Migration):
                 ('uid', models.CharField(max_length=60)),
             ],
         ),
+        migrations.CreateModel(
+            name='Post',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
+                ('title', models.CharField(max_length=255)),
+                ('publication_date', models.DateTimeField(auto_now_add=True)),
+                ('image_url', models.URLField(blank=True, null=True)),
+                ('content', models.TextField()),
+                ('approved', models.BooleanField(default=False)),
+                ('user', models.ForeignKey(on_delete=models.CASCADE, to='rareapi.User')),  
+            ],
+        ),
+        migrations.CreateModel(
+            name='PostTag',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
+                ('post', models.ForeignKey(on_delete=models.CASCADE, to='rareapi.Post')),  
+                ('tag', models.ForeignKey(on_delete=models.CASCADE, to='rareapi.Tag')),   
+            ],
+        ),
     ]
