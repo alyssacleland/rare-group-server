@@ -1,8 +1,8 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import status
-from rareapi.models.post import Post
-from rareapi.serializers import PostSerializer 
+from rareapi.models.post import Post, User, Category
+from rareapi.serializers import PostSerializer
 
 class PostView(ViewSet):
 
@@ -23,6 +23,16 @@ class PostView(ViewSet):
 
     # POST /posts/
     def create(self, request):
+        userId = User.objects.get(pk=request.data["user_id"])
+        category = Category.objects.get(pk=request.data["category_id"])
+        post = Post.objects.create(
+        user=userId,
+        category=category,
+        title=request.data["title"],
+        publication_date=request.data["publication_date"],
+        image_url=request.data["image_url"],
+        content=request.data["content"],
+    )
         serializer = PostSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
