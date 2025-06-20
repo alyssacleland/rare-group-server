@@ -2,7 +2,8 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import status
 from rareapi.models.post import Post
-from rareapi.serializers import PostSerializer 
+from rareapi.serializers import PostSerializer
+
 
 class PostView(ViewSet):
 
@@ -15,13 +16,17 @@ class PostView(ViewSet):
         except Post.DoesNotExist:
             return Response({"message": "Post not found"}, status=status.HTTP_404_NOT_FOUND)
 
-    # GET /posts/
+    # GET /posts/ & FILTER /posts?tag=:id
     def list(self, request):
         posts = Post.objects.all()
+        tag_id = request.query_params.get('tag', None)
+        if tag_id is not None:
+            posts = posts.filter(post_tags__tag_id=tag_id)
         serializer = PostSerializer(posts, many=True)
         return Response(serializer.data)
 
     # POST /posts/
+
     def create(self, request):
         serializer = PostSerializer(data=request.data)
         if serializer.is_valid():
