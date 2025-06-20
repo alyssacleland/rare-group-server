@@ -1,8 +1,9 @@
-from django.http import HttpResponseServerError
+
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
-from rest_framework import serializers, status
+from rareapi.serializers import UserSerializer
 from rareapi.models import User
+from rest_framework import status
 
 class UserView(ViewSet):
 
@@ -61,8 +62,3 @@ class UserView(ViewSet):
     user = User.objects.get(pk=pk)
     user.delete()
     return Response(None, status=status.HTTP_204_NO_CONTENT)
-
-class UserSerializer(serializers.ModelSerializer):
-  class Meta:
-    model = User
-    fields = ('id', 'first_name', 'last_name', 'bio', 'profile_image_url', 'email', 'created_on', 'active', 'is_staff', 'uid')
