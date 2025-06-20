@@ -1,0 +1,58 @@
+[
+  {
+    "model": "rareapi.category",
+    "pk": 1,
+    "fields": {
+      "label": "Tech"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 2,
+    "fields": {
+      "label": "Sports"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 3,
+    "fields": {
+      "label": "Entertainment"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 4,
+    "fields": {
+      "label": "Gaming"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 5,
+    "fields": {
+      "label": "Health"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 6,
+    "fields": {
+      "label": "Travel"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 7,
+    "fields": {
+      "label": "Food"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 8,
+    "fields": {
+      "label": "Business"
+    }
+  }
+]
