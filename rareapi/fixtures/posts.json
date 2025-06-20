@@ -4,11 +4,89 @@
     "pk": 1,
     "fields": {
       "user": 1,
-      "category_id": 1,
+      "category": 1,
       "title": "My First Blog Post",
       "publication_date": "2025-06-19",
       "image_url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800",
       "content": "This is my first post where I share my thoughts and experiences.",
+      "approved": true
+    }
+  },
+  {
+    "model": "rareapi.post",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "category": 1,
+      "title": "Best Dog Parks in Nashville",
+      "publication_date": "2025-06-01T12:00:00Z",
+      "image_url": "https://filetransfer.nashville.gov/portals/0/sitecontent/Parks/images/planning/People-and-dogs-in-SHELBY-D.jpg",
+      "content": "Here are the best spots in Nashville to let your dog run free.",
+      "approved": true
+    }
+  },
+  {
+    "model": "rareapi.post",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "category": 1,
+      "title": "Homemade Dog Treat Recipes",
+      "publication_date": "2025-06-10T09:30:00Z",
+      "image_url": "https://www.allrecipes.com/thmb/Lujzl03CEbifFMCNPWoCFZZAUmY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/133123-Peanut-Butter-and-Pumpkin-Dog-Treats-mfs-012-52ab3711d2954226a640adebcb2f0969.jpg",
+      "content": "Try these easy and healthy dog treats your pup will love.",
+      "approved": true
+    }
+  },
+  {
+    "model": "rareapi.post",
+    "pk": 4,
+    "fields": {
+      "user": 1,
+      "category": 1,
+      "title": "Surviving Bonnaroo 2025: Tips & Essentials",
+      "publication_date": "2025-06-13T10:00:00Z",
+      "image_url": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2220035960.jpg?c=original",
+      "content": "From hydration packs to must-see acts, here’s everything you need to thrive at Bonnaroo this year.",
+      "approved": true
+    }
+  },
+  {
+    "model": "rareapi.post",
+    "pk": 5,
+    "fields": {
+      "user": 1,
+      "category": 2,
+      "title": "My Favorite Sets from Bonnaroo",
+      "publication_date": "2025-06-17T20:30:00Z",
+      "image_url": "https://www.ticketfairy.com/word/wp-content/uploads/2025/03/Bonnaroo-Infinity-Stage-Line-up.jpg",
+      "content": "Here are the performances that blew me away at Bonnaroo 2025 — and the hidden gems you might’ve missed.",
+      "approved": true
+    }
+  },
+  {
+    "model": "rareapi.post",
+    "pk": 6,
+    "fields": {
+      "user": 1,
+      "category": 2,
+      "title": "Underrated Female Artists You Should’ve Heard By Now",
+      "publication_date": "2025-06-15T18:45:00Z",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2810_of_118%29_%2852946364598%29_%28best_crop%29.jpg",
+      "content": "Everyone knows names like Beyoncé and Taylor Swift, but there are so many insanely talented women out there making bold, beautiful, genre-pushing music who don’t get half the attention they deserve. Start with Raveena — her voice is pure silk and her lyrics are poetic without being pretentious. Then check out Yaya Bey, who blends jazz, R&B, and spoken word in a way that feels both fresh and timeless. I’d also put Indigo De Souza on this list for her unapologetic grunge-pop vibes. These artists aren’t just 'promising' — they’re already doing incredible work. Give them a listen, and you’ll see what I mean.",
+      "approved": true
+    }
+  },
+  {
+    "model": "rareapi.post",
+    "pk": 7,
+    "fields": {
+      "user": 1,
+      "category": 2,
+      "title": "My Dog Hates My Playlist but Stays Anyway",
+      "publication_date": "2025-06-19T01:10:00Z",
+      "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUmjtzj5qoi9skU5HMXdgpt0IJp0nOTgWFZmmiaDVnRBPqHZFNOZXlFW3c8NszM6-gHccx8tpPN7ngYhSs6-0N0ziJiJ6JULivFJEvZs3-CuOVjq3zhwEWexoHPVt1VFunPVwJA0nj4piwepmMlaUpA4dCMq82FPT0TP4t6Lf-q56V_NrM5mEmMyV6xAE/s1000/headphones%20for%20dogs.jpeg",
+      "content": "Every night I put on music and dance around the apartment while making dinner, and every night my dog sits five feet away, staring at me like I’m the dumbest creature alive. And honestly? Fair. I’ve had full conversations with her about whether Bon Iver is depressing or peaceful. She’s witnessed me cry to Phoebe Bridgers and also fist-pump to a remix of a Mario Kart theme. Zero judgment in her eyes — just deep, exhausted observation. I like to think she secretly enjoys it, or at least finds it comforting in some weird dog way. Either way, she never leaves the room. That’s love, I guess.",
       "approved": true
     }
   }
