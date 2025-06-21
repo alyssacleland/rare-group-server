@@ -16,6 +16,8 @@ class PostTagView(ViewSet):
 
     def list(self, request):
         post_tags = PostTag.objects.all()
+
+        # Optional filtering
         post_id = request.query_params.get('post_id')
         tag_id = request.query_params.get('tag_id')
         if post_id:
