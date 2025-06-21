@@ -22,6 +22,13 @@ class PostView(ViewSet):
         tag_id = request.query_params.get('tag', None)
         if tag_id is not None:
             posts = posts.filter(post_tags__tag_id=tag_id)
+        user_uid = request.query_params.get('user_uid', None)
+        if user_uid is not None:
+            posts = posts.filter(user__uid=user_uid)
+        is_public = request.query_params.get('public', None)
+        if is_public is not None:
+            is_public_bool = is_public.lower() == 'true'
+            posts = posts.filter(is_public=is_public_bool)
         serializer = PostSerializer(posts, many=True)
         return Response(serializer.data)
 
