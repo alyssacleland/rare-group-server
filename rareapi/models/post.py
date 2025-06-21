@@ -9,6 +9,7 @@ class Post(models.Model):
     image_url = models.URLField(blank=True, null=True)
     content = models.TextField()
     approved = models.BooleanField(default=False)
+    is_public = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
